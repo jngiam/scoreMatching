@@ -1,0 +1,16 @@
+Score Matching for ICA / TICA
+
+* Trains using minFunc
+* Dataset available at http://cs.stanford.edu/~jngiam/data/patches.mat
+
+Quick Start
+===========
+
+Run "runExample" in Matlab
+
+
+Notes
+=====
+
+* Uses a smaller dataset (e.g., data = data(:, 1:20000)) for faster training
+
