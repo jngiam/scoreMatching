@@ -5,7 +5,7 @@ function [smloss, grad, energy, Xg, Xg2] = ...
 oW = reshape(W, nHidden, nInput);
 
 % Force onto unit ball
-W = l2row(oW);
+[W, N] = l2row(oW);
 
 lambda  = 0;      % weight decay
 epsilon = 1;
@@ -70,7 +70,7 @@ end
 Wgrad = Wgrad + lambda * size(X,2) * W;
 
 %% Compress for returning
-Wgrad = l2rowg(oW, W, Wgrad);
+Wgrad = l2rowg(oW, W, N, Wgrad);
 
 grad = [Wgrad(:)] / size(X, 2);
 
