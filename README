@@ -5,7 +5,7 @@ Score Matching for ICA / TICA
 
 Cloning (read-only)
 ===========
-git clone --recursive git://github.com/jngiam/sparseFiltering.git
+git clone --recursive git://github.com/jngiam/scoreMatching.git
 
 (use recursive due to the presence of submodules)
 
